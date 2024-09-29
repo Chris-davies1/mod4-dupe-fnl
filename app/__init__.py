@@ -7,4 +7,3 @@ app.secret_key = 'your-secret'  # Replace with an environment variable
 from . import routes
 
 
-
