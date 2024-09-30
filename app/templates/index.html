@@ -2,11 +2,14 @@
 
 {% block content %}
 
-<h1>Christian Davies : 9/11/2024</h1>
+<h1><em>Davies Dawgy Den</em></h1>
 <br>
 
-<h1>Welcome to my super cool website </h1>
+<h1 style="text-transform: capitalize;">Welcome to our online website</h1>
 <br>
 
+<img src="{{ url_for('static', filename='assets/logo.jpg') }}" alt="Davies Dawgy Den Logo" width="200">
+<br>
+<a href="{{ url_for('products') }}">Go to Products Page</a>
 
 {% endblock %}

@@ -1,4 +1,3 @@
-<!-- app/templates/base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +8,19 @@
         .footer-text {
             font-size: 11pt;
         }
+        .products-page {
+            background-color: lightblue;
+        }
+        body {
+            background-color: lightblue;
+        }
+        .navbar {
+            background-color: darkblue;
+        }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">FlaskApp</a>
     <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +31,22 @@
                 <a class="nav-link" href="{{ url_for('index') }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('About Us') }}">About Us</a>
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('exam') }}">Exam</a>
+                <a class="nav-link" href="{{ url_for('products') }}">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('happy_customers') }}">Happy Customers</a>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+            </li>
             </li>
         </ul>
     </div>
 </nav>
 
-<div class="container">
+<div class="container {% block page_class %}{% endblock %}">
     {% block content %}{% endblock %}
 </div>
 
