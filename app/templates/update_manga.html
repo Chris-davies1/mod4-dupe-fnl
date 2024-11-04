@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Update Manga</h1>
+
+    <!-- Update Manga Form -->
+    <form method="POST" action="{{ url_for('manga.update_manga', manga_id=manga.manga_id) }}">
+        <div class="form-group">
+            <label for="manga_name">Manga Name</label>
+            <input type="text" class="form-control" id="manga_name" name="manga_name" value="{{ manga.Manga_Name }}" required>
+        </div>
+        <div class="form-group">
+            <label for="manga_genre">Genre</label>
+            <input type="text" class="form-control" id="manga_genre" name="manga_genre" value="{{ manga.Manga_Genre }}" required>
+        </div>
+        <div class="form-group">
+            <label for="manga_price">Price</label>
+            <input type="text" class="form-control" id="manga_price" name="manga_price" value="{{ manga.Manga_Price }}" required>
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" name="author" value="{{ manga.Author }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Manga</button>
+        <a href="{{ url_for('manga.all_manga') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+{% endblock %}

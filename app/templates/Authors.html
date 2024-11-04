@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 Authors</h1>
+<br>
+
+<h1>Masashi Kishimoto</h1>
+<img src="{{ url_for('static', filename='assets/kishimoto.jpg') }}" alt="Naruto" width="400">
+<h1>Masashi Kishimoto is a Japanese manga artist best known for creating Naruto, a globally popular series blending martial arts, ninjas, and fantasy, circulating from 1999 to 2014.</h1>
+<br>
+<h1>Tite Kubo</h1>
+
+<img src="{{ url_for('static', filename='assets/kubo.jpg') }}" alt="Bleach" width="200">
+<h1>Tite Kubo is a Japanese manga artist best known for creating Bleach. His work combines supernatural elements with stylish character designs and detailed action scenes, influencing many current shonen manga.</h1>
+<br>
+
+<h1>Hajime Isayma</h1>
+<img src="{{ url_for('static', filename='assets/isayama.jpg') }}" alt="AOT" width="200">
+<h1>Hajime Isayama, creator of Attack on Titan, is a Japanese manga artist known for his dark storytelling, unparalleled foreshadowing, and intricate world-building He explores humanity's struggles and societal themes through intense, action-packed narratives.</h1>
+<br>
+
+<h1>Eiichiro Oda</h1>
+<img src="{{ url_for('static', filename='assets/oda.jpg') }}" alt="one piece" width="300">
+<h1>Eiichiro Oda is a Japanese manga artist, best known for creating One Piece. He's celebrated for his storytelling, imaginative world-building, and dedication, shaping one of the most successful manga series ever.</h1>
+<br>
+
+{% endblock %}

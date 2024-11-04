@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 Manga in Stock Now!</h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/Naruto.jpg') }}" alt="naruto" width="200">
+<h1>Naruto- $5.99 </h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/bleach.jpg') }}" alt="bleach" width="200">
+<h1>Bleach- $9.99</h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/20th.jpg') }}" alt="20th " width="200">
+<h1> 20th Century Boys- $4.99</h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/OP.jpg') }}" alt="OP" width="200">
+<h1>One Piece- $5.99</h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/AOT.jpg') }}" alt="AOT" width="200">
+<h1>Attack on Titan- $7.99</h1>
+<br>
+
+<img src="{{ url_for('static', filename='assets/Berserk.jpg') }}" alt="Berserk" width="200">
+<h1>Berserk- $8.99</h1>
+<br>
+
+
+{% endblock %}
