@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h1><em>Davies Dawgy Den</em></h1>
+<div style="text-align: center;">
+<h1><em>The Manga Zone!</em></h1>
 <br>
-
+<div style="text-align: center;">
 <h1 style="text-transform: capitalize;">Welcome to our online website</h1>
 <br>
-
-<img src="{{ url_for('static', filename='assets/logo.jpg') }}" alt="Davies Dawgy Den Logo" width="200">
+<div style="text-align: center;">
+<img src="{{ url_for('static', filename='assets/logo.jpg') }}" alt="Maga zone" width="900">
 <br>
-<a href="{{ url_for('products') }}">Go to Products Page</a>
 
+<br>
+<div style="text-align: center;">
+<a href="{{ url_for('manga') }}" style="font-size: 32px; font-weight: bold;">Go to Manga Page</a>
 {% endblock %}

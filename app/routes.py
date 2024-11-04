@@ -13,13 +13,17 @@ def index():
 def about():
     return render_template('About.html')
 
-@app.route('/products')
-def products():
-    return render_template('Products.html')
+@app.route('/manga')
+def manga():
+    return render_template('Manga.html')
 
-@app.route('/happy_customers')
-def happy_customers():
-    return render_template('Happy Customers.html')
+@app.route('/all_manga')
+def all_manga():
+    return render_template('All_Manga.html')
+
+@app.route('/authors')
+def authors():
+    return render_template('Authors.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
